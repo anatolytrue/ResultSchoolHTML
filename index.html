@@ -9,77 +9,91 @@
     <title>Resume</title>
 </head>
 <body>
-    <div class="info">
-    <img src="./img/photo_2019-08-20_16-51-08.jpg" width="200" alt="Anatolii Tomniak">
-        <div class="info-text">
-            <h1>Anatolii Tomniak</h1>
-            <p>I'm learning <strong>HTML</strong> and <strong>CSS</strong>. I want to be <strong>front-end developer</strong></p>
-            <p>My hobbies: <em>travel, sport and videogames</em> </p>
-
-            <h4>List of socials:</h4>
-
-            <a href="https://www.youtube.com/channel/UChMPEQ5wbatTLoFibKgnADQ" target="_blank" rel='noopener'>Youtube</a>
-            |
-            <a href="https://t.me/anatolytrue/" target="_blank" rel='noopener'>Telegram</a>
-            |
-            <a href="https://www.instagram.com/anatolytrue/" target="_blank" rel='noopener'>Instagram</a>
+    
+    <div class="container">
+        <div class="info">
+            <img src="./img/photo_2019-08-20_16-51-08.jpg" alt="Anatolii Tomniak" class="avatar">
+            <div class="info-text">
+                <h1>Anatolii Tomniak</h1>
+                <p>I'm learning <strong>HTML</strong> and <strong>CSS</strong>. I want to be <strong>front-end
+                        developer</strong></p>
+                <p>My hobbies: <em>travel, sport and videogames</em> </p>
+        
+                <h4>List of socials:</h4>
+        
+                <a href="https://www.youtube.com/channel/UChMPEQ5wbatTLoFibKgnADQ" target="_blank" rel='noopener'>Youtube</a>
+                |
+                <a href="https://t.me/anatolytrue/" target="_blank" rel='noopener'>Telegram</a>
+                |
+                <a href="https://www.instagram.com/anatolytrue/" target="_blank" rel='noopener'>Instagram</a>
+            </div>
+        
         </div>
         
-    </div>
-    
-
-    <h2>My hobbies:</h2>
-    <ul>
-        <li>Travel</li>
-        <li>Running</li>
-        <li>Snowboard</li>
-        <li>Football</li>
-        <li>Video-games</li>
-    </ul>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Casa Nori</td>
-                <td>Waiter</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <td>Geis Logistic</td>
-                <td>Forklift driver</td>
-                <td>2019-2020</td>
-            </tr>
-            <tr>
-                <td>Casa Nori</td>
-                <td>Waiter</td>
-                <td>2020-2023</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Connect with me:</h2>
-    <form action="/">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your name..">
+        <div class="card bg-yellow">
+            <h2>My hobbies:</h2>
+            <ul class="list">
+                <li>Travel</li>
+                <li>Running</li>
+                <li>Snowboard</li>
+                <li>Football</li>
+                <li>Video-games</li>
+            </ul>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your email..">
+        
+        <div class="card bg-green">
+            <h2>My experience:</h2>
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Casa Nori</td>
+                        <td>Waiter</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>Geis Logistic</td>
+                        <td>Forklift driver</td>
+                        <td>2019-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Casa Nori</td>
+                        <td>Waiter</td>
+                        <td>2020-2023</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div>
-            <label for="message">Message:</label>
-            <br>
-            <textarea name="message" id="message" cols="27" rows="5" placeholder="Enter your message.."></textarea>
+        
+
+            <form action="/" class="form">
+                <h2 class="form-title">Connect with me:</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Your name..">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Your email..">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="27" rows="5" placeholder="Enter your message.."></textarea>
+                </div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
         </div>
-        <input type="submit" value="Submit">
-    </form>
+        
+
 </body>
 </html>
